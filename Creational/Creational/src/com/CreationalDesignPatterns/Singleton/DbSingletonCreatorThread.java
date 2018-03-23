@@ -16,9 +16,9 @@ public class DbSingletonCreatorThread extends Thread {
     @Override
     public void run() {
         DbSingleton dbSingleton = DbSingleton.getInstance();
-        IntStream.range(1, 100).forEach(i -> {
+        IntStream.range(1, 10).forEach(i -> {
             try {
-                sleep(100);
+                sleep(10);
                 System.out.println(name + " " + i);
             } catch (InterruptedException e) {
                 System.out.println("Interrupted in sleep: " + e.getMessage());
