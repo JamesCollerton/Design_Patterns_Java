@@ -1,4 +1,4 @@
-package com.CreationalDesignPatterns;
+package com.CreationalDesignPatterns.Singleton;
 
 public class DbSingleton {
 
