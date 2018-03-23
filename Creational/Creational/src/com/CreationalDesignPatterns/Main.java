@@ -10,10 +10,10 @@ public class Main {
 
     private static void runSingletonExample() {
 
-        SingletonExample singletonExampleOne = SingletonExample.getInstance();
-        SingletonExample singletonExampleTwo = SingletonExample.getInstance();
+        DbSingleton dbSingletonOne = DbSingleton.getInstance();
+        DbSingleton dbSingletonTwo = DbSingleton.getInstance();
 
-        System.out.println(singletonExampleOne == singletonExampleTwo);
+        System.out.println(dbSingletonOne == dbSingletonTwo);
 
     }
 }
