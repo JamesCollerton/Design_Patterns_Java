@@ -1,7 +1,5 @@
 package com.CreationalDesignPatterns.Singleton.Practice;
 
-import com.CreationalDesignPatterns.Singleton.DbSingleton;
-
 public class SingletonExample {
 
     private volatile SingletonExample instance;
@@ -12,7 +10,7 @@ public class SingletonExample {
 
     public SingletonExample getInstance() {
         if(instance == null) {
-            synchronized (DbSingleton.class) {
+            synchronized (SingletonExample.class) {
                 if(instance == null) {
                     instance = new SingletonExample();
                 }
